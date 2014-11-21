@@ -14,6 +14,7 @@ namespace AspNetHosting.Modules
         {
             Get["/"] = _ => "Hello World";
 
+
             Get["/json"] = _ =>
             {
                 var ringo = new[]
@@ -25,6 +26,7 @@ namespace AspNetHosting.Modules
                 return Response.AsJson(ringo);
             };
 
+
             Get["/1"] = _ =>
             {
                 var ringo = DapperClass.SelectByID("1");
@@ -34,6 +36,7 @@ namespace AspNetHosting.Modules
                 response.ContentType = "text/html; charset=utf8";
                 return response;
             };
+
 
             Get["/ringo/{id}"] = _ =>
             {
@@ -62,7 +65,6 @@ namespace AspNetHosting.Modules
             // Azureの環境変数による接続文字列
             Get["/connection/environment"] = _ =>
             {
-                
                 return Environment.GetEnvironmentVariable("SQLAZURECONNSTR_NancyOwinAzure").ToString();
             };
         }
