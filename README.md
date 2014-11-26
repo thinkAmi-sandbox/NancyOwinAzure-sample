@@ -6,7 +6,7 @@ NancyOwinAzure-sample
 [![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://azuredeploy.net/)
 
 　  
-after deployment, run FlumentMigrator task. (use `.deployment`file and `deploy.cmd`. see: [deploy.cmd](https://github.com/thinkAmi/NancyOwinAzure-sample/blob/master/deploy.cmd))
+after deployment, run FlumentMigrator task. (use `.deployment`file and `deploy.cmd`. see: [deploy.cmd](https://github.com/thinkAmi-sandbox/NancyOwinAzure-sample/blob/master/deploy.cmd))
 
 　  
 ## Tested environment
